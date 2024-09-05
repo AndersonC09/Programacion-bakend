@@ -5,10 +5,10 @@ const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Esta es la página principal');
-  } else if (req.url === '/about') {
+  } else if (req.url === '/contact') { 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Esta es la página "Acerca de"');
+    res.end('Esta es la página de "Contacto"'); 
   } else {
     res.statusCode = 404;
     res.setHeader('Content-Type', 'text/plain');
